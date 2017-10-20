@@ -23,7 +23,7 @@ public class DBConnector {
     private static final String URL = "jdbc:mysql://207.154.222.88:3306/LegoHouse";
     private static final String USER = "test";
     private static final String PASSWORD = "testpassword";
-    private static Connection conn;
+    private static Connection conn = null;
     
     public static Connection getConnection() throws ClassNotFoundException, SQLException {
         if (conn == null) {
